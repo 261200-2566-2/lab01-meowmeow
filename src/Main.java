@@ -6,7 +6,7 @@ public class Main {
         int n;
         Scanner sin = new Scanner(System.in);
         System.out.print("Enter array size: ");
-        n = sin.nextInt();
+        n = Math.abs(sin.nextInt());
         long[] arr = readInput(sin, n);
         sin.close();
         Arrays.sort(arr);
