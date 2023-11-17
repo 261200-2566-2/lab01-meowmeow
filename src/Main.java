@@ -17,7 +17,7 @@ public class Main {
         long[] arr = new long[n];
         System.out.println("Enter array elements: ");
         for (int i = 0; i < n; i++) {
-            arr[i] = Math.abs(sin.nextLong());
+            arr[i] = sin.nextLong();
         }
         sin.close();
         return arr;
