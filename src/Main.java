@@ -7,16 +7,15 @@ public class Main {
         Scanner sin = new Scanner(System.in);
         System.out.print("Enter array size: ");
         n = sin.nextInt();
-        long[] arr = readInput(n);
+        long[] arr = readInput(sin, n);
         sin.close();
         Arrays.sort(arr);
         printArray(arr);
     }
 
-    public static long[] readInput(int n) {
+    public static long[] readInput(Scanner sin, int n) {
         long[] arr = new long[n];
         System.out.println("Enter array elements: ");
-        Scanner sin = new Scanner(System.in);
         for (int i = 0; i < n; i++) {
             arr[i] = Math.abs(sin.nextLong());
         }
